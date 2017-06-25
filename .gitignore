@@ -1,0 +1,4 @@
+# secure config files
+*.secret.conf
+*.com.conf
+*.ssl.conf

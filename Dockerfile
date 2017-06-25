@@ -4,7 +4,7 @@ RUN apk update && apk add nginx bash ca-certificates curl
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
-EXPOSE 80 443 8089 9000
+EXPOSE 80 443 8089
 
 STOPSIGNAL SIGQUIT
 
