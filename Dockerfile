@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk add nginx bash ca-certificates curl
+RUN apk update && apk add nginx bash ca-certificates curl openssl git
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
